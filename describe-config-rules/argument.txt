@@ -1,0 +1,5 @@
+$username
+k.hattori
+
+$configrulenames
+cloudtrail-enabled

@@ -1,0 +1,10 @@
+$ToMailAddress
+$DEFAULT_REPLYTO
+
+$DEFAULT_SUBJECT
+
+対象ユーザ:  ${ENV, var="username"}
+対象ConfigRole : ${ENV, var="configrulenames"}
+確認結果 : ${BUILD_STATUS}
+JobのURL : ${BUILD_URL}
+結果 : ${FILE,path="result.txt"}

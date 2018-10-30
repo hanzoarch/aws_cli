@@ -1,0 +1,24 @@
+{
+    "Resources": {
+        "IAMUSER1": {
+            "Type": "AWS::IAM::User",
+            "Properties": {
+             "LoginProfile": {
+                  "Password": "Password",
+                  "PasswordResetRequired": false
+                   },
+              "UserName": "AUTOUser",
+              "Policies":[{
+                  "PolicyName": "AdministratorAccess",
+                  "PolicyDocument": {
+                      "Statement": [{
+                              "Effect": "Allow",
+                              "Action": "*",
+                              "Resource": "*"
+                              }]
+                          }
+                    }]
+             }
+        }
+    }
+}
